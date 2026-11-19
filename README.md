@@ -1,1 +1,0 @@
-# Fairview_ICT10_Q2Project_Daet_Eliana

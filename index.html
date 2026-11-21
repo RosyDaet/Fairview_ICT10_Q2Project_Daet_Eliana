@@ -1,11 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Q1 Project</title>
+  <meta name="description" content="Eliana Daet's portfolio." />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      background-image: url("https://i.pinimg.com/1200x/77/ce/9e/77ce9e8c915e6b1c54988e22b65b5a64.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    h1, h2 {
+      color: #ADD8E6;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    li {
+      color: #ADD8E6;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+
+    ol, ul {
+      padding-left: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 8px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    #login-form {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: white;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      background-color: #222;
+      color: white;
+      border: 1px solid #555;
+    }
+
+    .horizontal-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+      justify-content: center;
+    }
+
+    .horizontal-group label {
+      font-weight: normal;
+      color: white;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 14px;
+      width: 100%;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: #ADD8E6;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .horizontal-group {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-items: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-    
+  <header>
+    <nav>
+      
+    </nav>
+  </header>
+
+  <section id="about">
+    <h1>Meet the creater</h1>
+    <h2>About Me</h2>
+
+    <ol>
+      <li>My name is Eliana Daet</li>
+      <li>A student from OB Montessori</li>
+      <li>From Grade 9-Ruby</li>
+      <li>A new coder</li>
+      <li>
+        Favorite Hobbies:
+        <ul>
+          <li>Reading Books</li>
+          <li>Watching Movies</li>
+          <li>Writing</li>
+          <li>Coding</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  
 </body>
 </html>

@@ -1,32 +1,62 @@
+from pyscript import document,display
 
 from pyscript import document
 
-# ICT club members by grade
-grade_7 = {"Julian Ante", "Kendra Saludar", "Francis Fernandez", "Gavin Ruiz"}
+# Dictionary of weather instrumnets
+Weather_instrument = {
+    "Thermometer": {
+        "Measures Air Temperature",
+        "Unit of Measurement: Degrees Celsius (°C)" ,
+        "Purpose: Measures how hot or cold the air is"
+    },
 
-grade_8 = {"Vihaan Master", "Sebastian Fernandez", "Peter Reyes"}
+    "Barometer": {
+        "Measures Atmospheric Pressure",
+        "Unit of Measurement : Hectopascals (hPa)",
+        "Purpose : Measures air pressure to help monitor weather changes"
+    },
 
-grade_9 = {"Anthony Aggarao", "Nico Crispino", "Janna Planas", "Khiane Herrera", "Algena Cabling", "Alexei Janayan"}
+    "Anemometer": {
+        "Measures Wind Speed",
+        "Unit of Measurement : Kilometers per hour (km/h)",
+        "Purpose : Measures how fast the wind blows"
+    },
 
-grade_10 = {"Edrian Correa", "Philip Ponce", "Julian Anaque", "Andrik David", "Alexander Floro", "Annika De Vera", "Eliana Daet"}
+    "Hygrometer": {
+        "Measures Relative Humidity",
+        "Unit of Measurement : Percent (%)",
+        "Purpose : Measures the amount of moisture in the air"
+    },
 
-# Combine all grade sets
-fullmembers = grade_7 | grade_8 | grade_9 | grade_10
+    "Rain Gauge": {
+        "Measures Rainfall",
+        "Unit of Measurement: Millimeters (mm)",
+        "Purpose :Measures the amount of rainfall in an area"
+    },
+
+    "Wind Vane": {
+         "Measures Wind Direction",
+         "Unit of Measurement : Cardinal Directions",
+         "Purpose : Identifies the direction from which the wind is blowing"
+    },
+
+    "Weather Balloon": (
+        "Measures Atmospheric Conditions",
+        "Unit of Measurement : Varies",
+        "Purpose : Collects atmospheric data at different altitudes"
+    ),
+
+    "Pyranometer": (
+        "Measures Solar Radiation",
+        "Unit of Measurement : Watts per square meter (W/m²)",
+        "Purpose : Measures incoming solar radiation"
+    )
+}
 
 
-def check_members(event):
-    # Get the first and last names
-    first_name = document.querySelector("#first_name").value.strip()
-    last_name = document.querySelector("#last_name").value.strip()
+def Search(event):
 
-    # Combine the names
-    full_name = first_name + " " + last_name
+    # Get the element symbol from HTML
+    Element1 = document.querySelector("#Elements").value.strip()
 
-    # Add the new member
-    fullmembers.add(full_name)
 
-    # Create the results message
-    message = f"ALL MEMBERS:\n{chr(10).join(sorted(fullmembers))}\nTOTAL MEMBERS: {len(fullmembers)}"
-
-    # Display the results
-    document.getElementById("List").innerHTML = message
